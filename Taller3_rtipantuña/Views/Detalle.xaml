@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taller3_rtipantuña.Views.Detalle"
+             Title="Detalle">
+    <ContentPage.Resources>
+        <!-- Explicit Styles -->
+        <Style x:Key="LabelTitleStyle" TargetType="Label">
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="TextColor" Value="#007ACC" />
+            <Setter Property="Margin" Value="0,10,0,0" />
+        </Style>
+        <Style x:Key="LabelValueStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="#333" />
+            <Setter Property="Margin" Value="0,2,0,0" />
+        </Style>
+        <Style x:Key="ExportButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#28A745"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="CornerRadius" Value="6"/>
+            <Setter Property="HeightRequest" Value="45"/>
+            <Setter Property="Margin" Value="0,20,0,0"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+           
+            <Label Text="Detalle de Contacto" Style="{StaticResource LabelTitleStyle}" HorizontalOptions="Center" />
+
+            <Label Text="Tipo de Identificación:" Style="{StaticResource LabelTitleStyle}" />
+            <Label x:Name="LabelTipoIdentificacion" Style="{StaticResource LabelValueStyle}" />
+
+            <Label Text="Identificación:" Style="{StaticResource LabelTitleStyle}" />
+            <Label x:Name="LabelIdentificacion" Style="{StaticResource LabelValueStyle}" />
+
+            <Label Text="Nombres:" Style="{StaticResource LabelTitleStyle}" />
+            <Label x:Name="LabelNombres" Style="{StaticResource LabelValueStyle}" />
+
+            <Label Text="Apellidos:" Style="{StaticResource LabelTitleStyle}" />
+            <Label x:Name="LabelApellidos" Style="{StaticResource LabelValueStyle}" />
+
+            <Label Text="Fecha:" Style="{StaticResource LabelTitleStyle}" />
+            <Label x:Name="LabelFecha" Style="{StaticResource LabelValueStyle}" />
+
+            <Label Text="Correo:" Style="{StaticResource LabelTitleStyle}" />
+            <Label x:Name="LabelCorreo" Style="{StaticResource LabelValueStyle}" />
+
+            <Label Text="Salario:" Style="{StaticResource LabelTitleStyle}" />
+            <Label x:Name="LabelSalario" Style="{StaticResource LabelValueStyle}" />
+
+            <Label Text="Aporte al IESS (9.45%):" Style="{StaticResource LabelTitleStyle}" />
+            <Label x:Name="LabelIESS" Style="{StaticResource LabelValueStyle}" />
+
+            <Button Text="Exportar a Archivo de Texto" Clicked="ButtonExportar_Clicked" Style="{StaticResource ExportButtonStyle}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

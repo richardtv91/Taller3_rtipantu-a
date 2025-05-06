@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taller3_rtipantuña.Views.Home"
+             Title="Home">
+    <VerticalStackLayout Spacing="7" Padding="25">
+       <?esto es desde donde se debe programar las vistas ?>
+        <Label Text="Ingrese los datos de contacto" FontAttributes="Bold" FontSize="16" TextColor="#007ACC" HorizontalOptions="Center" />
+        <Label Text="Identificación:" FontAttributes="Bold"/>
+        <Picker x:Name="PickerIdentificacion" Title="Seleccione identificación" SelectedIndexChanged="PickerIdentificacion_SelectedIndexChanged" FontAttributes="Bold">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>CI</x:String>
+                    <x:String>RUC</x:String>
+                    <x:String>Pasaporte</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label Text="Número de Identificación:" FontAttributes="Bold" />
+        <Entry x:Name="EntryIdentificacion" Placeholder="Ingrese número" Keyboard="Text" />
+
+        <Label Text="Nombres:" FontAttributes="Bold" />
+        <Entry x:Name="EntryNombres" Placeholder="Ingrese nombres" Keyboard="Text"/>
+
+        <Label Text="Apellidos:" FontAttributes="Bold" />
+        <Entry x:Name="EntryApellidos" Placeholder="Ingrese apellidos" Keyboard="Text"/>
+
+        <Label Text="Fecha:" FontAttributes="Bold" />
+        <DatePicker x:Name="DatePickerFecha"  />
+
+        <Label Text="Correo:" FontAttributes="Bold" />
+        <Entry x:Name="EntryCorreo" Placeholder="correo@ejemplo.com" Keyboard="Email"/>
+
+        <Label Text="Salario:" FontAttributes="Bold" />
+        <Entry x:Name="EntrySalario" Placeholder="Ingrese salario" Keyboard="Numeric" />
+
+        <Button Text="Ver Detalles" Clicked="ButtonVerDetalles_Clicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

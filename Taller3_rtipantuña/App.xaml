@@ -1,0 +1,34 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Taller3_rtipantuña"
+             x:Class="Taller3_rtipantuña.App">
+    <Application.Resources>
+        <!-- Implicit Styles for all Entry elements on MainPage -->
+        <Style TargetType="Entry">
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="BackgroundColor" Value="#F0F0F0"/>
+            <Setter Property="TextColor" Value="#333"/>
+            <Setter Property="PlaceholderColor" Value="#888"/>
+            <Setter Property="HeightRequest" Value="30" />
+        </Style>
+        <Style TargetType="Picker">
+            <Setter Property="Margin" Value="0,5,0,5" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="HeightRequest" Value="40" />
+        </Style>
+        <Style TargetType="DatePicker">
+            <Setter Property="Margin" Value="0,5,0,5" />
+            <Setter Property="HeightRequest" Value="40" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#007ACC" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="HeightRequest" Value="45" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="0,10,0,0" />
+        </Style>
+    </Application.Resources>
+</Application>
