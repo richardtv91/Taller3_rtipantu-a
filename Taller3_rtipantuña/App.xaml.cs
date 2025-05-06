@@ -11,8 +11,8 @@ namespace Taller3_rtipantuña
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-              MainPage = new NavigationPage(new Views.Home());
-            return new Window(MainPage);
+              
+            return new Window(new NavigationPage(new Views.Home()));
         }
     }
 }

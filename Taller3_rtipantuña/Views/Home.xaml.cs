@@ -35,7 +35,7 @@ public partial class Home : ContentPage
         }
     }
 
-    private  void ButtonVerDetalles_Clicked(object sender, EventArgs e)
+    private  async void ButtonVerDetalles_Clicked(object sender, EventArgs e)
     {
         if (!ValidateInputs())
             return;
@@ -52,8 +52,8 @@ public partial class Home : ContentPage
             Salario = decimal.Parse(EntrySalario.Text.Trim())
         };
 
-        // Navigate to DetailPage passing contactData
-        Navigation.PushModalAsync(new Views.Detalle(contactData));
+         await Navigation.PushAsync(new Views.Detalle(contactData));
+       // Navigation.PushModalAsync(new Views.Detalle(contactData));
     }
 
     private bool ValidateInputs()
