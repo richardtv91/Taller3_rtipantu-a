@@ -4,7 +4,7 @@
              x:Class="Taller3_rtipantuña.Views.Detalle"
              Title="Detalle">
     <ContentPage.Resources>
-        <!-- Explicit Styles -->
+        <!-- explcitos estlos -->
         <Style x:Key="LabelTitleStyle" TargetType="Label">
             <Setter Property="FontAttributes" Value="Bold" />
             <Setter Property="FontSize" Value="20" />
@@ -29,7 +29,8 @@
     <ScrollView>
         <VerticalStackLayout>
 
-           
+            <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2023/03/MENU-WEB-3-2048x517.jpg" WidthRequest="50"></Image>
+
             <Label Text="Detalle de Contacto" Style="{StaticResource LabelTitleStyle}" HorizontalOptions="Center" />
 
             <Label Text="Tipo de Identificación:" Style="{StaticResource LabelTitleStyle}" />

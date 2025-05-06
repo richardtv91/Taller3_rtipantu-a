@@ -5,6 +5,8 @@
              Title="Home">
     <VerticalStackLayout Spacing="7" Padding="25">
        <?esto es desde donde se debe programar las vistas ?>
+        <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2023/03/MENU-WEB-3-2048x517.jpg" WidthRequest="50"></Image>
+
         <Label Text="Ingrese los datos de contacto" FontAttributes="Bold" FontSize="16" TextColor="#007ACC" HorizontalOptions="Center" />
         <Label Text="Identificación:" FontAttributes="Bold"/>
         <Picker x:Name="PickerIdentificacion" Title="Seleccione identificación" SelectedIndexChanged="PickerIdentificacion_SelectedIndexChanged" FontAttributes="Bold">
